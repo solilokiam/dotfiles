@@ -123,7 +123,18 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    hypercwd: {
+      initialWorkingDirectory: '~/Projects'
+    },
+    hyperTabs: {
+      trafficButtons: true,
+      border: true,
+      closeAlign: 'right',
+      tabIconsColored: true,
+    }
   },
+
+  scrollback: 3000,
 
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
@@ -135,7 +146,8 @@ module.exports = {
     "hyper-statusline",
     "hyperterm-bold-tab",
     "hyper-tabs-enhanced",
-    "hyper-snazzy",
+    // "hyper-snazzy",
+    "hyper-yonce",
     "hyper-opacity",
     "hyper-simple-highlight-active-session",
     "hypercwd",
@@ -144,17 +156,13 @@ module.exports = {
     "hyperlinks",
     "hyper-savetext",
     "hyper-quit"
-    ],
-
-
+  ],
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [],
 
-  hypercwd: {
-    initialWorkingDirectory: '~/Projects'
-  },
+
 
   keymaps: {
     // Example
